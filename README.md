@@ -1,4 +1,4 @@
-# Smart Pac server
+# PAC server
 
 Proxy Auto-Configuration (PAC) file server.
 
@@ -18,3 +18,6 @@ Put pac file to `pacfile` folder.
 Open `http://localhost:9877`
 
 
+# TODO
+
+Complete implementation of PAC context function

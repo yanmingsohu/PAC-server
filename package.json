@@ -8,11 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/yanmingsohu/PAC-server"
   },
   "author": "yanming",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0"
-  }
+  "dependencies": {}
 }
