@@ -1,5 +1,10 @@
 var useproxy = [
-  "facebook", 'google.com', 'fbcdn.net', 'instagram.com',
+  "facebook", 'google.com', 'fbcdn.net', 'instagram.com', 'youtube.com', 'ggpht.com', 'ytimg.com', 'googlevideo.com',
+  'hinge.co', 'tinyurl.com', 'strandfabrik.eu.org', 'google.lv', 'youporn.com', 'phncdn.com', 'ypncdn.com',
+  'google.de', 'tumblr.com', 'jsfiddle.net', 'fiddle.jshell.net', 'twitter.com', 'reddit.com', 'redditstatic.com',
+  'news.tut.by', 'wikipedia.org', 'torproject.org', 'duckduckgo.com', 'porn', 'xvideos.com', 'cloudfront.net',
+  'githubusercontent.com', 'brb.duolingo.com', 'gotinder.com', 't.me', 'telegram.org', 'steamcommunity.com',
+  'imgur.com', 'sstatic.net',
 ];
 
 var passurl = [];
@@ -21,5 +26,5 @@ function FindProxyForURL(url, host) {
       return tor_proxy;
     }
   }  
-  return "DIRECT"; 
+  return "DIRECT; "+ tor_proxy; 
 } 
