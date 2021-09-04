@@ -84,8 +84,8 @@ function getfile(req, res) {
   let ret = testPac(f);
   if (ret.err) {
     res.writeHead(500);
-    res.end(err.stack);
-    console.error(err);
+    res.end(ret.err.stack);
+    console.error(ret.err);
   } else {
     res.writeHead(200, { 'Content-Type': 'application/x-ns-proxy-autoconfig' });
     fs.createReadStream(f).pipe(res);
