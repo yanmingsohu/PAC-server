@@ -32,17 +32,17 @@ function localHostOrDomainIs(host, hostdom) {
 
 
 function isResolvable(host) {
-  throw new Error("unsupport");
+  return true;
 }
 
 
 function isInNet(host, pattern, mask) {
-  throw new Error('unsupport');
+  return true;
 }
 
 
 function dnsResolve(host) {
-  throw new Error('unsupport');
+  return true;
 }
 
 
@@ -52,7 +52,7 @@ function convert_addr(ipaddr) {
 
 
 function myIpAddress() {
-  throw new Error('unsupport');
+  return "127.0.0.1"
 }
 
 
@@ -82,5 +82,5 @@ function timeRange(/*<hour1>, <min1>, <sec1>, <hour2>, <min2>, <sec2>, [gmt]*/) 
 
 
 function alert(message) {
-  throw new Error('unsupport');
+  console.log("alert()", message);
 }
